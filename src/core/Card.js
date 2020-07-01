@@ -34,7 +34,7 @@ const Card = ({
 
     const shouldRedirect = redirect => {
         if(redirect){
-            return <Redirect to="/cart" />;
+            return <Redirect to="/shop" />;
         }
     };
 
