@@ -15,6 +15,7 @@ const {user} = isAuthenticated();
 
 const Menu = ({history}) => (
     <div>
+        <navbar fixed ="top">
         <ul className="nav nav-tabs bg-primary">
             <li className="nav-item">
                 <Link 
@@ -98,6 +99,8 @@ const Menu = ({history}) => (
             )}
 
         </ul>
+        </navbar>
     </div>
+    
 );
 export default withRouter(Menu);
