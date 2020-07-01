@@ -16,7 +16,7 @@ const {user} = isAuthenticated();
 const Menu = ({history}) => (
     <div>
         <navbar sticky ="top">
-        <ul className="nav nav-tabs bg-primary">
+        <ul sticky ="top" className="nav nav-tabs bg-primary">
             <li className="nav-item">
                 <Link 
                 className="nav-link" 
