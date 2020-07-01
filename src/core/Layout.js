@@ -8,7 +8,7 @@ const Layout = ({
     className, 
     children}) => (
 <div>
-    <Menu />
+    <Menu sticky = "top"/>
 <div className="jumbotron">
     <h2>{title}</h2>
     <p className="lead">{description}</p>
