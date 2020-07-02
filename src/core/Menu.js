@@ -15,8 +15,7 @@ const {user} = isAuthenticated();
 
 const Menu = ({history}) => (
     <div>
-        <navbar sticky ="top">
-        <ul sticky ="top" className="nav nav-tabs bg-primary">
+        <ul className="nav nav-tabs bg-primary">
             <li className="nav-item">
                 <Link 
                 className="nav-link" 
@@ -99,7 +98,6 @@ const Menu = ({history}) => (
             )}
 
         </ul>
-        </navbar>
     </div>
     
 );

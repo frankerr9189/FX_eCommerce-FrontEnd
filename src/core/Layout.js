@@ -3,12 +3,12 @@ import Menu from './Menu';
 import "../styles.css";
 
 const Layout = ({
-    title = "FX-Digital", 
-    description = "eCommerce Platform", 
+    title = "KSD-Technologies", 
+    description = "eCommerce Demo Platform", 
     className, 
     children}) => (
 <div>
-    <Menu sticky = "top"/>
+    <Menu className="sticky"/>
 <div className="jumbotron">
     <h2>{title}</h2>
     <p className="lead">{description}</p>

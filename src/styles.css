@@ -80,6 +80,10 @@
     -moz-animation: Gradient 15s ease infinite;
     animation: Gradient 15s ease infinite;
 }
+.sticky {
+    position: sticky;
+    top: 0;
+}
 
 @-webkit-keyframes Gradient {
     0% {
