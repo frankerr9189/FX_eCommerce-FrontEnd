@@ -48,7 +48,7 @@ const Cart = () => {
         className="container-fluid">
             
             <div className="row">
-                <div className="col-4">
+                <div className="col-5">
                 <Link className="nav-link" 
                 to="/shop">
                     <button className="btn btn-primary">Add more items
@@ -58,7 +58,7 @@ const Cart = () => {
 
                     {items.length>0 ? showItems(items) : noItemsMessage()}
                 </div>
-                <div className="col-8">
+                <div className="col-7">
                     <h2 className="mb-4">Your Cart Summary</h2>
                     <hr/>
                     <Checkout products={items} setRun={setRun} run={run} />
