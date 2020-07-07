@@ -89,11 +89,6 @@ const Card = ({
                 <div className="input-group-prepend">
                     <span className="input-group-text">Update Quantity</span>
                 </div>
-                <input 
-                type="number" 
-                className="form-control" 
-                value={count} 
-                onChange={handleChange(product._id)}/>
                 <select value={count} onChange={handleChange(product._id)}>
                     <option value="1">1</option>
                     <option value="2">2</option>
