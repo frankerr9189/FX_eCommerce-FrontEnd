@@ -78,10 +78,14 @@ const Menu = ({history}) => (
                 Signup
                 </Link>
             </li>
+            <li>
+                Guest
+            </li>
                 </Fragment>
             )}
 
             {isAuthenticated() && (
+                <Fragment>
             <li className="nav-item">
                 <span
                 className="nav-link"
@@ -92,9 +96,13 @@ const Menu = ({history}) => (
                     })
                 }
                 >
-                    Signout {user.name}
+                    Signout 
                 </span>
             </li>
+            <li>
+                {user.name}
+            </li>
+            </Fragment>
             )}
 
         </ul>
