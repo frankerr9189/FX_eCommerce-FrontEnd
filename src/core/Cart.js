@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
 import Layout from './Layout';
 import {getCart} from './cartHelpers';
-import Card from './Card';
+import Card from './CardOriginal';
 import Checkout from './Checkout';
 
 const Cart = () => {
@@ -48,7 +48,7 @@ const Cart = () => {
         className="container-fluid">
             
             <div className="row">
-                <div className="col-6">
+                <div className="col-4">
                 <Link className="nav-link" 
                 to="/shop">
                     <button className="btn btn-primary">Add more items
@@ -58,7 +58,7 @@ const Cart = () => {
 
                     {items.length>0 ? showItems(items) : noItemsMessage()}
                 </div>
-                <div className="col-6">
+                <div className="col-8">
                     <h2 className="mb-4">Your Cart Summary</h2>
                     <hr/>
                     <Checkout products={items} setRun={setRun} run={run} />
