@@ -78,7 +78,7 @@ const Menu = ({history}) => (
                 Signup
                 </Link>
             </li>
-            <li>
+            <li className="nav-item">
                 Guest
             </li>
                 </Fragment>
@@ -99,7 +99,7 @@ const Menu = ({history}) => (
                     Signout 
                 </span>
             </li>
-            <li>
+            <li className="nav-item">
                 {user.name}
             </li>
             </Fragment>
