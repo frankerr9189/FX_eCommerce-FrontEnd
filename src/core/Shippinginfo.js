@@ -57,7 +57,7 @@ const Shippinginfo = () => {
     const shippingUpdate = (name, email, address, state, city, postalCode) => (
         <form>
             <div className="form-group">
-                <label className="text-muted">Name</label>
+                <label className="text-muted">Name:</label>
                 <input 
                 type="text" 
                 onChange={handleChange('name')} 
@@ -65,7 +65,7 @@ const Shippinginfo = () => {
                 value={name}/>
             </div>
             <div className="form-group">
-                <label className="text-muted">Email</label>
+                <label className="text-muted">Email:</label>
                 <input 
                 type="text" 
                 onChange={handleChange('email')} 
@@ -73,7 +73,7 @@ const Shippinginfo = () => {
                 value={email}/>
             </div>
             <div className="form-group">
-                <label className="text-muted">Address</label>
+                <label className="text-muted">Address:</label>
                 <input 
                 type="text" 
                 onChange={handleChange('address')} 
@@ -81,7 +81,7 @@ const Shippinginfo = () => {
                 value={address}/>
             </div>
             <div className="form-group">
-                <label className="text-muted">City</label>
+                <label className="text-muted">City:</label>
                 <input 
                 type="text" 
                 onChange={handleChange('city')} 
@@ -89,7 +89,7 @@ const Shippinginfo = () => {
                 value={city}/>
             </div>
             <div className="form-group">
-                <label className="text-muted">State</label>
+                <label className="text-muted">State:</label>
                 <input 
                 type="text" 
                 onChange={handleChange('state')} 
@@ -97,7 +97,7 @@ const Shippinginfo = () => {
                 value={state}/>
             </div>
             <div className="form-group">
-                <label className="text-muted">Postal Code</label>
+                <label className="text-muted">Postal Code:</label>
                 <input 
                 type="text" 
                 onChange={handleChange('postalCode')} 
@@ -116,7 +116,7 @@ const Shippinginfo = () => {
             
             <div className="row">
                     <h2 className="mb-4">Shipping Information</h2>
-                    {shippingUpdate()}
+                    {shippingUpdate(name, email, address, city, state, postalCode)}
             </div>
     
         </Layout>
