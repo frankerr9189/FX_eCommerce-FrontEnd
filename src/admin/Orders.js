@@ -10,7 +10,9 @@ const Orders = () =>{
     const [statusValues, setStatusValues] = useState([]);
     const {user, token} = isAuthenticated();
 
-    const ordersToProcess = orders.filter((orders) => orders.status !== 'Completed')
+    const ordersToProcess = orders.filter(
+        (order) => (order.status !== 'Completed' && order.status!== 'Cancelled'))
+        
     const loadOrders = () => {
         listOrders(user._id, token).then(data => {
             if(data.error){
