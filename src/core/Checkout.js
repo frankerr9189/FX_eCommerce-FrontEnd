@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Fragment } from 'react';
 import { getProducts, getBraintreeClientToken, processPayment, createOrder } from './apiCore';
 import { emptyCart } from './cartHelpers';
 import Card from './CardOriginal';
@@ -57,9 +57,14 @@ const Checkout = ({ products, setRun = f => f, run = undefined }) => {
         return isAuthenticated() ? (
             <div>{showDropIn()}</div>
         ) : (
+            <Fragment>
             <Link to="/signin">
                 <button className="btn btn-primary">Sign in to checkout</button>
             </Link>
+            <Link to="/shippinginfo">
+            <button className="btn btn-primary">Checkout as guest</button>
+        </Link>
+        </Fragment>
         );
     };
 
