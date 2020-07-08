@@ -41,13 +41,13 @@ const Shippinginfo = () => {
             } else {
                 setValues({
                     ...values,
-                    name: '',
-                    email: '',
-                    address: '',
-                    city: '',
-                    state: '',
-                    postalCode: '',
-                    error: '',
+                    name: data.name,
+                    email: data.email,
+                    address: data.address,
+                    city: data.city,
+                    state: data.state,
+                    postalCode: data.postalCode,
+                    error: 'false',
                     success: true
                 })
             }
