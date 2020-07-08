@@ -46,7 +46,7 @@ const Signin = () => {
         </div>
          <div className="form-group">
              <label className="text-muted">Password</label>
-              <input onChange={handleChange('password')}mtype="password" 
+              <input onChange={handleChange('password')}type="password" 
               className="form-control" value={password}/>
         </div>
         <button onClick={clickSubmit} className="btn btn-primary">Submit</button>
