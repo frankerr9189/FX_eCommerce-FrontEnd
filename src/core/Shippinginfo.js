@@ -115,15 +115,8 @@ const Shippinginfo = () => {
         className="container-fluid">
             
             <div className="row">
-                <div className="col-5">
-                <h1 className="mb-4">Your Cart Summary</h1>
-                    <hr/>
-                    <Checkout products={items} setRun={setRun} run={run} />
-                </div>
-                <div className="col-7">
                     <h2 className="mb-4">Shipping Information</h2>
-                    {shippingUpdate(name, email, address, city, postalCode)}
-                </div>
+                    {shippingUpdate()}
             </div>
     
         </Layout>
