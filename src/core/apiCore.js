@@ -119,3 +119,22 @@ export const createOrder = (userId, token, createOrderData) => {
     })
     .catch(err=> console.log(err));
 };
+
+// guest shipping
+export const guestShipping = guest => {
+    return fetch(`${API}/shippinginfo`,{
+         method: "POST",
+         headers:{
+             Accept: "application/json",
+             "Content-Type": "application/json"
+         },
+         body: JSON.stringify(guest)
+     })
+     .then(response=> {
+         return response.json();
+         console.log(guest);
+     })
+     .catch(err=> {
+         console.log(err);
+     });
+ };
