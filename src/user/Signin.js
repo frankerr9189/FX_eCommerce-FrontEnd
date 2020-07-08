@@ -32,6 +32,7 @@ const Signin = () => {
                         ...values,
                         redirectToReferrer: true
                     });
+                    history.pushState('/')//test
                 });
             }
         });
